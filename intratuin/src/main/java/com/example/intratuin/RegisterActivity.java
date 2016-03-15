@@ -1,7 +1,6 @@
-package com.intra.bionic.intratuinapp;
+package com.example.intratuin;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -50,30 +49,16 @@ public class RegisterActivity extends Activity implements OnClickListener {
         rbFemale = (RadioButton)findViewById(R.id.rbFemale);
         bSignUp = (Button)findViewById(R.id.bSignUp);
         bBirthday = (Button)findViewById(R.id.bBirthday);
+
+        rbMale.setOnClickListener(this);
+        rbFemale.setOnClickListener(this);
+        bSignUp.setOnClickListener(this);
+        bBirthday.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.etFirstName:
-
-                break;
-
-            case R.id.etLastName:
-
-                break;
-
-            case R.id.etMailAddress:
-
-                break;
-
-            case R.id.etPassword:
-
-                break;
-
-            case R.id.etRePassword:
-
-                break;
 
             case R.id.rbMale:
 
