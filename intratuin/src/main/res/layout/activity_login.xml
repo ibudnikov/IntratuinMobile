@@ -41,13 +41,8 @@
         android:layout_height="wrap_content"
         android:text="Sign-in" />
 
-    <com.twitter.sdk.android.core.identity.TwitterLoginButton
-        android:id="@+id/bLoginTwitter"
-        android:layout_width="match_parent"
-        android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content" />
 
-    <com.facebook.login.widget.LoginButton
+     <com.facebook.login.widget.LoginButton
         android:id="@+id/bLoginFacebook"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
