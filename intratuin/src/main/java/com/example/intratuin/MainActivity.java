@@ -10,29 +10,29 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity implements OnClickListener {
 
-    Button bLogin;
-    TextView tvRegisterLink;
+    Button bLoginMain;
+    TextView tvRegisterLinkMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        bLogin = (Button)findViewById(R.id.bLogin);
-        tvRegisterLink = (TextView)findViewById(R.id.tvRegisterLink);
+        bLoginMain = (Button)findViewById(R.id.bLoginMain);
+        tvRegisterLinkMain = (TextView)findViewById(R.id.tvRegisterLinkMain);
 
-        bLogin.setOnClickListener(this);
-        tvRegisterLink.setOnClickListener(this);
+        bLoginMain.setOnClickListener(this);
+        tvRegisterLinkMain.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.bLogin:
+            case R.id.bLoginMain:
                 Intent loginIntent = new Intent(this, LoginActivity.class);
                 startActivity(loginIntent);
                 break;
-            case R.id.tvRegisterLink:
+            case R.id.tvRegisterLinkMain:
                 Intent registerIntent = new Intent(this, RegisterActivity.class);
                 startActivity(registerIntent);
                 break;

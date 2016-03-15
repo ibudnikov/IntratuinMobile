@@ -15,7 +15,7 @@
         android:src="@mipmap/ic_launcher" />
 
     <Button
-        android:id="@+id/bLogin"
+        android:id="@+id/bLoginMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Enter to account"
@@ -23,7 +23,7 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/tvRegisterLink"
+        android:id="@+id/tvRegisterLinkMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

@@ -41,12 +41,12 @@
         android:layout_height="wrap_content"
         android:text="Sign-in" />
 
-
+<!--
      <com.facebook.login.widget.LoginButton
         android:id="@+id/bLoginFacebook"
         android:layout_width="match_parent"
         android:layout_marginBottom="10dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content" /> -->
 
     <TextView
         android:id="@+id/tvRegisterLink"

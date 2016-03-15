@@ -8,8 +8,10 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import com.facebook.FacebookSdk;
-import com.facebook.login.widget.LoginButton;
+
+//import com.facebook.CallbackManager;
+//import com.facebook.FacebookSdk;
+//import com.facebook.login.widget.LoginButton;
 
 public class LoginActivity extends Activity implements OnClickListener {
 
@@ -20,25 +22,27 @@ public class LoginActivity extends Activity implements OnClickListener {
     EditText etPassword;
     Button bLogin;
     //Button bLoginTwitter;
-    LoginButton bLoginFacebook;
+    //LoginButton bLoginFacebook;
+   // CallbackManager callbackManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        FacebookSdk.sdkInitialize(getApplicationContext());
+        //FacebookSdk.sdkInitialize(getApplicationContext());
+        //callbackManager = CallbackManager.Factory.create();
 
         tvEmailAddress = (TextView)findViewById(R.id.tvEmailAddress);
         tvPassword = (TextView)findViewById(R.id.tvPassword);
         etEmailAddress = (EditText)findViewById(R.id.etEmailAddress);
         etPassword = (EditText)findViewById(R.id.etPassword);
         //bLoginTwitter = (Button)findViewById(R.id.bLoginTwitter);
-        bLoginFacebook = (LoginButton)findViewById(R.id.bLoginFacebook);
+        //bLoginFacebook = (LoginButton)findViewById(R.id.bLoginFacebook);
         bLogin = (Button)findViewById(R.id.bLogin);
         tvRegisterLink = (TextView)findViewById(R.id.tvRegisterLink);
 
        // bLoginTwitter.setOnClickListener(this);
-        bLoginFacebook.setOnClickListener(this);
+        //bLoginFacebook.setOnClickListener(this);
         bLogin.setOnClickListener(this);
         tvRegisterLink.setOnClickListener(this);
     }
@@ -59,9 +63,9 @@ public class LoginActivity extends Activity implements OnClickListener {
 
             //    break;
 
-            case R.id.bLoginFacebook:
+            //case R.id.bLoginFacebook:
 
-                break;
+            //    break;
         }
     }
 }
